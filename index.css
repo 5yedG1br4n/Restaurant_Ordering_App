@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  background: #8b8b8b;
+  font-family: "Smythe", cursive;
+}
+
+.main-container {
+  margin: auto;
+  width: 600px;
+  height: 1161px;
+  background: #fff;
+}
+
+.hero-section {
+  width: 600px;
+  height: 167px;
+  background-image: url("/images/hero_image.png");
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 46px;
+  box-sizing: border-box;
+}
+
+.hero-title {
+  color: #fff;
+  text-align: center;
+  font-size: 39px;
+  font-family: "Smythe";
+  line-height: 24px;
+  margin: 0 0 19px 0;
+}
+
+.hero-subtitle {
+  margin: 0px;
+  color: #fff;
+  font-size: 22.422px;
+  font-family: Smythe;
+  line-height: 13.798px;
+}
+
+.body-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+  justify-content: space-between;
+  padding: 67px 46px 53px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  width: 508px;
+  height: 140px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.item-icon {
+  text-align: center;
+  font-size: 78.72px;
+  line-height: 98.4px;
+  letter-spacing: -1.574px;
+  opacity: 0.7200000286102295;
+  margin: 0;
+}
+
+.menu-item-details {
+  margin-left: 31px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 1px;
+}
+
+.name {
+  color: #000;
+  font-size: 28px;
+  font-family: Smythe;
+  line-height: 16.8px;
+  margin: 0;
+}
+
+.ingredients {
+  color: #8b8b8b;
+  font-size: 16px;
+  font-family: Smythe;
+  line-height: 24px;
+  margin: 0;
+}
+
+.price {
+  color: #000;
+  font-size: 20px;
+  font-family: Smythe;
+  line-height: 24px;
+  margin: 0;
+}
+
+.add-btn {
+  color: #3c3c3c;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 24px;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 1.5px solid #dedede;
+  background-color: #fff;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  width: 508px;
+  height: 319px;
+  padding: 1px;
+}
+
+.checkout-heading {
+  margin: 0;
+  text-align: center;
+}
+
+.checkout-list {
+  padding: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.checkout-item-name {
+  color: #000;
+  font-size: 28px;
+  font-family: Smythe;
+  line-height: 16.8px;
+}
+
+.remove-btn {
+  width: 77px;
+  height: 22px;
+  color: #bbb;
+  background: #fff;
+  font-size: 12px;
+  font-family: Verdana;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout-price {
+  margin-left: auto;
+  color: #000;
+  font-size: 20px;
+  font-family: Smythe;
+  line-height: 24px;
+}
+
+.total-price-container {
+  border-top: 2px solid #393333;
+  margin-top: auto;
+}
+
+.total-price-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.complete-order {
+  width: 508px;
+  padding: 18px 175px 18px 194px;
+  align-items: center;
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-family: Verdana;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  border-radius: 3px;
+  background: #16db99;
+  /* shadow/sm */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  /* justify-self: flex-end; */
+  margin-top: auto;
+}
+
+.modal {
+  display: none;
+  width: 524px;
+  height: 542.24px;
+  padding: 47px 24px 29px;
+  box-sizing: border-box;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 0px 500px 30px #393333;
+}
+
+.modal-title {
+  color: #000;
+  font-size: 24px;
+  font-family: Verdana;
+  font-weight: 700;
+  line-height: 31.119px;
+  margin-top: 0;
+}
+
+.modal-form {
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input {
+  box-sizing: border-box;
+  display: block;
+  width: 475.911px;
+  height: 71.304px;
+  border-radius: 3.89px;
+  border: 1.297px solid #757575;
+  color: #757575;
+  font-size: 20px;
+  font-family: Verdana;
+  line-height: 31.119px;
+  margin-top: 23px;
+  padding: 16.5px 233px 14px 26.5px;
+}
+
+.pay-btn {
+  width: 475.911px;
+  height: 71.304px;
+  border: none;
+  border-radius: 3.89px;
+  background: #16db99;
+  color: var(--white, #fff);
+  font-size: 20px;
+  font-family: Verdana;
+  font-weight: 700;
+  line-height: 31.119px;
+  margin-top: 46px;
+  cursor: pointer;
+}
+
+.thanks-div {
+  width: 504px;
+  height: 120px;
+  border-radius: 3px;
+  background: #ecfdf5;
+}
+
+.thanks-label {
+  color: #065f46;
+  font-size: 32px;
+  font-family: Smythe;
+  line-height: 16.8px;
+  text-align: center;
+  padding-top: 30px;
+}
